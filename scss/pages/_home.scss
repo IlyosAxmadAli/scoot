@@ -1,0 +1,217 @@
+.hero {
+  width: 100%;
+  padding-top: 15.3rem;
+  padding-bottom: 15.3rem;
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("../images/png/hero.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 160px;
+  &__title {
+    @include font($family1, 5.4rem, $weight-b, $h1-height, $white);
+    margin-bottom: 4rem;
+  }
+  &__text-box {
+    width: 100%;
+    max-width: 500px;
+  }
+  &__BtnAndText {
+    padding-left: 10rem;
+  }
+  &__description {
+    position: relative;
+    @include font($family2, $text-size, $weight-r, $text-height, $white);
+    margin-bottom: 5.4rem;
+    &::before {
+      content: url("../images/svg/strelka1.svg");
+      position: absolute;
+      left: -260px;
+      top: 40px;
+    }
+    &::after {
+      content: url("../images/svg/strelka2.svg");
+      position: absolute;
+      left: 460px;
+      top: 40px;
+    }
+  }
+}
+.commercial {
+  margin-bottom: 200px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 15px solid #e5ecf4;
+    background-color: #e5ecf4;
+    width: 1050px;
+    z-index: -1;
+    left: -184px;
+    top: 35px;
+  }
+  &__list {
+    display: flex;
+    gap: 6rem;
+    &:last-child {
+      padding-right: 5rem;
+    }
+  }
+  &__title {
+    @include font($family1, $h4-size, $weight-b, $h4-height, $dark-navy);
+    margin-bottom: 2.7rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+  }
+  img {
+    margin-bottom: 40px;
+  }
+}
+.riding {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 200px;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/Mask.svg");
+    right: -35rem;
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    content: url("../images/svg/strelka3.svg");
+    right: 0;
+    bottom: -10px;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    border-radius: 50%;
+  }
+  &__info {
+    width: 100%;
+    max-width: 465px;
+  }
+  &__title {
+    @include font($family1, 4.6rem, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+    margin-bottom: 5.4rem;
+  }
+}
+.coming {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/Mask.svg");
+    left: -35rem;
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    content: url("../images/svg/strelka4.svg");
+    left: -400px;
+    top: 0;
+  }
+  margin-bottom: 200px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    border-radius: 50%;
+  }
+  &__info {
+    width: 100%;
+    max-width: 460px;
+  }
+  &__title {
+    @include font($family1, 4.6rem, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+    margin-bottom: 5.4rem;
+  }
+}
+.zero {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/Mask.svg");
+    right: -35rem;
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    content: url("../images/svg/strelka5.svg");
+    right: -385px;
+    top: 70px;
+  }
+  margin-bottom: 200px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    border-radius: 50%;
+  }
+  &__info {
+    width: 100%;
+    max-width: 460px;
+  }
+  &__title {
+    @include font($family1, $h2-size, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+    margin-bottom: 5.4rem;
+  }
+}
+.site-bottom {
+  background: url("../images/svg/footer-roll.svg") no-repeat;
+  background-position: bottom right;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $dark-navy;
+  &__container {
+  }
+  &__services {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .apps {
+    display: flex;
+    gap: 1.8rem;
+  }
+  &__title {
+    @include font($family1, $h1-size, $weight-b, $h3-height, $white);
+  }
+}
+.footer {
+  background-color: $footer-bg;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__site-logo {
+    margin-right: 5.8rem;
+  }
+  &__icons a path:hover {
+    fill: $white;
+    transition: 0.3s;
+  }
+  .icon:not(:last-child) {
+    margin-right: 20px;
+  }
+}

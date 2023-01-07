@@ -1,0 +1,201 @@
+.about {
+  margin-bottom: 12rem;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/header-roll.svg");
+    right: 0;
+    top: 16.4rem;
+  }
+  margin-top: 9.7rem;
+  width: 100%;
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("../images/png/Bitmap.png") no-repeat;
+  background-size: cover;
+  &__title {
+    @include font($family1, 5.6rem, $weight-b, $h1-height, $white);
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+  }
+}
+.mobilitiy {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/Mask.svg");
+    right: -35rem;
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    content: url("../images/svg/about-strelka1.svg");
+    right: -3px;
+    bottom: 25px;
+  }
+  margin-bottom: 12rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 100%;
+    max-width: 445px;
+  }
+  &__title {
+    @include font($family1, $h3-size, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+  }
+  &__image {
+    border-radius: 50%;
+  }
+}
+.better {
+  overflow: hidden;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/Mask.svg");
+    left: -35rem;
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    content: url("../images/svg/strelka4.svg");
+    left: -400px;
+    top: 0;
+  }
+  margin-bottom: 12rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 100%;
+    max-width: 445px;
+  }
+  &__title {
+    @include font($family1, $h3-size, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+  }
+  &__image {
+    border-radius: 50%;
+  }
+}
+.values {
+  margin-bottom: 12rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    @include font($family1, $h3-size, $weight-b, $h3-height, $dark-navy);
+    margin-bottom: 10rem;
+  }
+  &__list {
+    display: flex;
+    gap: 3rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    &::before {
+      content: url("../images/svg/val1.svg");
+      position: absolute;
+      top: 200px;
+    }
+    &:nth-child(2):before {
+      content: url("../images/svg/val2.svg");
+      position: absolute;
+      top: 200px;
+    }
+    &:nth-child(3):before {
+      content: url("../images/svg/val3.svg");
+      position: absolute;
+      top: 200px;
+    }
+  }
+  &__image {
+    border-radius: 50%;
+    margin-bottom: 9rem;
+  }
+  &__h4-title {
+    @include font($family1, $h4-size, $weight-b, $h4-height, $dark-navy);
+    margin-bottom: 2.7rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+    text-align: center;
+  }
+}
+.faqs {
+  margin-bottom: 12rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include font($family1, $h2-size, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 6.4rem;
+    text-align: center;
+  }
+}
+.wrapper {
+  &:not(:last-child) {
+    margin-bottom: 6.4rem;
+  }
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    @include font($family1, $h3-size, $weight-b, $h3-height, $dark-navy);
+  }
+  &__list {
+    width: 100%;
+    max-width: 730px;
+  }
+  &__item {
+    position: relative;
+    &:nth-child(1)::after {
+      position: absolute;
+      content: url("../images/svg/top-st.svg");
+      right: 40px;
+      top: 32px;
+    }
+    &:not(:first-child)::after {
+      position: absolute;
+      content: url("../images/svg/bot-st.svg");
+      right: 40px;
+      top: 32px;
+    }
+    padding: 3.2rem 4rem;
+    background-color: $light-grey;
+    &:hover {
+      background-color: $light-yellow;
+      transition: 0.3s;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__i-title {
+    @include font($family1, $h4-size, $weight-b, $h4-height, $dark-navy);
+  }
+  &__i-title1 {
+    @include font($family1, $h4-size, $weight-b, $h4-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__i-text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+  }
+}

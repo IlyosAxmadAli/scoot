@@ -1,0 +1,18 @@
+.btn {
+  @include font($family1, $text-size, $weight-b, $text-height, $white);
+  text-align: center;
+  background-color: $yellow;
+  padding: 1.4rem 4.8rem;
+  transition: 0.3s;
+  border: 2px solid $yellow;
+  display: inline-block;
+
+  &:hover {
+    background-color: transparent;
+    color: $yellow;
+    border: 2px solid $yellow;
+  }
+  &:active {
+    background-color: $light-grey;
+  }
+}

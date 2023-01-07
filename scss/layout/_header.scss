@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: $white;
+  z-index: 1;
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__site-logo {
+    margin-right: 5.8rem;
+    @media (max-width: 720px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      img {
+        width: 75.5px;
+        height: 20px;
+      }
+    }
+  }
+  @media (max-width: 720px) {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+  }
+  &__toggle {
+    background-color: transparent;
+    border: none;
+    display: none;
+    @media (max-width: 720px) {
+      display: block;
+    }
+  }
+}

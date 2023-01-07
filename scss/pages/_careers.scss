@@ -1,0 +1,129 @@
+.careers {
+  margin-bottom: 12rem;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/header-roll.svg");
+    right: 0;
+    top: 16.4rem;
+  }
+  margin-top: 9.7rem;
+  width: 100%;
+  background: linear-gradient(rgba(47, 59, 89, 0.75), rgba(47, 59, 89, 0.75)),
+    url("../images/png/location-bg.png") no-repeat;
+  background-size: cover;
+  &__title {
+    @include font($family1, 5.6rem, $weight-b, $h1-height, $white);
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
+  }
+}
+.mission {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 200px;
+  &::before {
+    position: absolute;
+    content: url("../images/svg/Mask.svg");
+    right: -35rem;
+    top: 0;
+  }
+  &::after {
+    position: absolute;
+    content: url("../images/svg/strelka3.svg");
+    right: 0;
+    bottom: 0;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    border-radius: 50%;
+  }
+  &__info {
+    width: 100%;
+    max-width: 465px;
+  }
+  &__title {
+    @include font($family1, 4.6rem, $weight-b, $h2-height, $dark-navy);
+    margin-bottom: 2.4rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+    margin-bottom: 5.4rem;
+  }
+}
+.Why-join-us {
+  margin-bottom: 12rem;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    @include font($family1, $h3-size, $weight-b, $h3-height, $dark-navy);
+    margin-bottom: 10rem;
+  }
+  &__list {
+    display: flex;
+    gap: 3rem;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    &::before {
+      content: url("../images/svg/val1.svg");
+      position: absolute;
+      top: 200px;
+    }
+    &:nth-child(2):before {
+      content: url("../images/svg/val2.svg");
+      position: absolute;
+      top: 200px;
+    }
+    &:nth-child(3):before {
+      content: url("../images/svg/val3.svg");
+      position: absolute;
+      top: 200px;
+    }
+  }
+  &__image {
+    border-radius: 50%;
+    margin-bottom: 9rem;
+  }
+  &__h4-title {
+    @include font($family1, $h4-size, $weight-b, $h4-height, $dark-navy);
+    margin-bottom: 2.7rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+    text-align: center;
+  }
+}
+.experts {
+  margin-bottom: 16rem;
+  &__item {
+    background-color: $snow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.2rem 4rem;
+    &:not(:last-child) {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__title {
+    @include font($family1, $h4-size, $weight-b, $h4-height, $dark-navy);
+    margin-bottom: 0.8rem;
+  }
+  &__text {
+    @include font($family2, $text-size, $weight-r, $text-height, $dim-grey);
+  }
+  &__btn {
+    padding: 1.4rem 6.6rem;
+  }
+}
