@@ -1,4 +1,7 @@
 .header {
+  @include responsive(tablet) {
+    margin-bottom: 120px;
+  }
   width: 100%;
   position: fixed;
   background-color: $white;
